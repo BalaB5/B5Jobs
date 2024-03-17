@@ -5,33 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jobz Quest - Unlocking Endless Opportunities for Software Engineers/Developers</title>
+    <title>B5 jobs - Unlocking Endless Opportunities for Software Engineers/Developers</title>
 
-    <meta name="title" content="Jobz Quest - Unlocking Endless Opportunities for Software Engineers/Developers">
+    <meta name="title" content="B5 jobs - Unlocking Endless Opportunities for Software Engineers/Developers">
     <meta name="description"
-        content="Looking for a job?  JobzQuest® has endless opportunities for Software Engineers/Developers! Find a right job for yourself.">
+        content="Looking for a job?  B5jobs® has endless opportunities for Software Engineers/Developers! Find a right job for yourself.">
     <meta name="keywords"
-        content="jobzquest, jobz quest, jobs quest, jobs for software engineers, jobs for software developers">
-    <meta name="robots" content="index, follow">
-
-    <meta property="og:title"
-        content="Jobz Quest - Unlocking Endless Opportunities for Software Engineers/Developers" />
-    <meta property="og:url" content="https://theritikchoure.github.io/JobzQuest" />
-    <meta property="og:site_name" content="JobzQuest">
-    <meta property="og:description"
-        content="Looking for a job?  JobzQuest® has endless opportunities for Software Engineers/Developers! Find a right job for yourself." />
-    <meta property="og:image" content="https://theritikchoure.github.io/JobzQuest/assets/image/logo.png" />
-    <meta property="og:type" content="website" />
-
-    <!-- twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://theritikchoure.github.io/JobzQuest" />
-    <meta property="twitter:title"
-        content="Jobz Quest - Unlocking Endless Opportunities for Software Engineers/Developers" />
-    <meta property="twitter:description"
-        content="Looking for a job?  JobzQuest® has endless opportunities for Software Engineers/Developers! Find a right job for yourself." />
-    <meta property="twitter:image" content="https://theritikchoure.github.io/JobzQuest/assets/image/logo.png" />
-
+        content="B5jobs, B5 jobs, jobs , jobs for software engineers, jobs for software developers">
 
     <link rel="icon" type="image/x-icon" href="./assets/image/logo.png" />
 
@@ -39,14 +19,17 @@
         {
             "@context": "http://schema.org",
             "@type": "Organization",
-            "name": "JobzQuest",
-            "url": "https://theritikchoure.github.io/JobzQuest",
-            "logo": "https://theritikchoure.github.io/JobzQuest/assets/image/logo.png"
+            "name": "B5jobs",
+            "url": "https://theritikchoure.github.io/B5jobs",
+            "logo": "https://theritikchoure.github.io/B5jobs/assets/image/logo.png"
         }
     </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJVNYXZ1BJ"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -56,6 +39,7 @@
     </script>
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/demo.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./data/jobs.js"></script>
     <script src="./data/internships.js"></script>
@@ -76,12 +60,12 @@
         <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-6 lg:py-20">
             <div class="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center">
                 <h2 class="mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                    Jobz Quest
+                    B5 jobs
                 </h2>
                 <p class="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg">
                     Unlocking Endless Opportunities for Your Career
                 </p>
-                <form class="flex flex-col items-center w-full mb-4 md:flex-row md:px-16 md:mb-10" method="POST"
+                <form class="flex flex-col items-center w-full mb-4 md:flex-row md:px-16 md:mb-10 display: none  visibility: hidden" method="POST"
                     action="https://1dd5c8e3.sibforms.com/serve/MUIEAJGa7bKUuEGiCT2cxZZY-ADJQxXHY72byPOqvFoXH2TK7R0s2Dd8rwuPXqRz1b4yj9fWvLecl29KkWrgni-TrUhmucK8umHOyfa-lNIF210sLJh5drfMjirk30fT1Sz1l4KqPGGNF0Hbyoc45rxbVWSR6gPAM_CgeANQAHtgJo_jVdiF21Naz7nBKrPqucOUa0KRJYjGGvb3">
                     <input placeholder="Email" required type="text" id="EMAIL" name="EMAIL" autocomplete="off"
                         data-required="true"
@@ -92,7 +76,7 @@
                         <option value="2">Internships</option>
                     </select>
                     <button type="submit"
-                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none">
+                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none">
                         Subscribe
                     </button>
                 </form>
@@ -118,17 +102,18 @@
     </div>
 
     <div class="main px-5 py-5 lg:py-16 lg:px-56" id="listings">
-        <form class="flex flex-col items-center w-full mb-4 md:flex-row md:px-16 md:mb-10" method="GET"
+        <form class="" method="GET"
             id="search-form">
+
             <input placeholder="Enter skill (one skill at a time)(eg. nodejs/python)" required type="text" id="skill"
                 name="skill" autocomplete="off" data-required="true"
                 class="flex-grow w-full h-12 px-4 mb-3 text-black transition duration-200 bg-transparent border-2 border-gray-400 rounded appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-200 focus:outline-none focus:shadow-outline" />
             <button type="submit"
-                class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none">
+                class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none">
                 Search
             </button>
             <button type="reset"
-                class="inline-flex items-center justify-center w-full h-12 px-6 mt-2 md:mt-0 md:ml-2 font-medium tracking-wide text-purple-400 transition duration-200 rounded shadow-md md:w-auto bg-transparent hover:bg-purple-700 hover:text-white border-2 border-purple-400 focus:shadow-outline focus:outline-none">
+                class="inline-flex items-center justify-center w-full h-12 px-6 mt-2 md:mt-0 md:ml-2 font-medium tracking-wide text-purple-700 transition duration-200 rounded shadow-md md:w-auto bg-transparent hover:bg-purple-400 hover:text-white border-2 border-purple-400 focus:shadow-outline focus:outline-none">
                 Reset
             </button>
         </form>
@@ -136,21 +121,21 @@
         <div class="loader hidden flex items-center justify-center mx-auto" id="loader"></div>
         <div id="pagination" class="flex items-center justify-center mt-10">
             <button id="prevPage"
-                class="px-4 py-2 text-white bg-purple-400 rounded-l-md cursor-pointer disabled:opacity-50">Prev</button>
+                class="px-4 py-2 text-white bg-purple-700 rounded-l-md cursor-pointer ">Prev</button>
             <span id="currentPage" class="px-4 py-2 font-bold">1</span>
             <button id="nextPage"
-                class="px-4 py-2 text-white bg-purple-400 rounded-r-md cursor-pointer disabled:opacity-50">Next</button>
+                class="px-4 py-2 text-white bg-purple-700 rounded-r-md cursor-pointer ">Next</button>
         </div>
     </div>
 
     <footer class="px-4 divide-y bg-gray-900 text-gray-100">
-        <div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+        <!-- <div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
             <div class="lg:w-1/3">
                 <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
                     <div class="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
                         <img src="./assets/image/logo.png" alt="">
                     </div>
-                    <span class="self-center text-2xl font-semibold">JobzQuest</span>
+                    <span class="self-center text-2xl font-semibold">B5jobs</span>
                 </a>
             </div>
             <div class="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-3">
@@ -178,22 +163,22 @@
                     <ul class="space-y-1 leading-8">
                         <li>
                             <a rel="noopener noreferrer"
-                                href="https://github.com/theritikchoure/JobzQuest/blob/main/CONTRIBUTING.md"
+                                href="https://github.com/theritikchoure/B5jobs/blob/main/CONTRIBUTING.md"
                                 target="_blank">Contribution guidelines</a>
                         </li>
                         <li>
                             <a rel="noopener noreferrer"
-                                href="https://github.com/theritikchoure/JobzQuest/blob/main/CODE_OF_CONDUCT.md"
+                                href="https://github.com/theritikchoure/B5jobs/blob/main/CODE_OF_CONDUCT.md"
                                 target="_blank">Code of Conduct</a>
                         </li>
                         <li>
                             <a rel="noopener noreferrer"
-                                href="https://github.com/theritikchoure/JobzQuest/blob/main/LICENSE"
+                                href="https://github.com/theritikchoure/B5jobs/blob/main/LICENSE"
                                 target="_blank">License</a>
                         </li>
                         <li>
                             <a rel="noopener noreferrer"
-                                href="https://github.com/theritikchoure/JobzQuest/issues/new?assignees=&labels=via+page+report%2Cneeds+triage&template=page-report.yml"
+                                href="https://github.com/theritikchoure/B5jobs/issues/new?assignees=&labels=via+page+report%2Cneeds+triage&template=page-report.yml"
                                 target="_blank">Report an issue</a>
                         </li>
                         <li>
@@ -215,13 +200,12 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="py-6 text-sm text-center dark:text-gray-400">© 2023 JobzQuest. 100% Open source || For the devs, by
-            the devs.</div>
+        </div> -->
+        <div class="py-6 text-sm text-center dark:text-gray-400">© 2024 B5world || For the developed by the Bala.</div>
     </footer>
 
     <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" onclick="backToTop()"
-        class="inline-block p-3 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-800 hover:shadow-lg focus:bg-green-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-500 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5"
+        class="inline-block p-3 bg-purple-700 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-purple-400 hover:shadow-lg focus:bg-green-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-500 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5"
         id="btn-back-to-top">
         <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -231,18 +215,10 @@
         </svg>
     </button>
 
-    <section class="cookie" id="cookie-modal">
-        <div class="txt">
-            <p class="">
-                By using JobzQuest, you agree to our <a href="./privacy-policy.html" target="_blank">Cookie Policy.</a>
-            </p>
-        </div>
-        <div>
-            <button class="btn accept" id="cookie-accept" onclick="cookieAccept()">Accept</button>
-        </div>
-    </section>
+
 
     <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>

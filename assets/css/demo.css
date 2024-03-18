@@ -1,0 +1,246 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+
+
+body {
+	font-family: "Spline Sans", sans-serif;
+	line-height: 1.5;
+	min-height: 100vh;
+	background-color: var(--c-ash);
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2.5rem;
+	width: 90%;
+	max-width: 1000px;
+	margin: 10vh auto;
+}
+
+.card {
+	border-radius: 16px;
+	box-shadow: 0 30px 30px -25px rgba(#ffffff, .25);
+	max-width: 300px;
+}
+
+.information {
+    background-color: #fafbff;
+	padding: 1.5rem;
+    animation-name: cardEntrance;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+
+	.tag {
+		display: inline-block;
+		background-color: var(--c-titan-white);
+		color: var(--c-indigo);
+		font-weight: 600;
+		font-size: 0.875rem;
+		padding: 0.5em 0.75em;
+		line-height: 1;
+		border-radius: 6px;
+        border-color: purple;
+		& + * {
+			margin-top: 1rem;
+		}
+	}
+
+	.title {
+		font-size: 1.5rem;
+		color: var(--c-void);
+		line-height: 1.25;
+		& + * {
+			margin-top: 0.7rem;
+		}
+	}
+
+	.info {
+		color: var(--c-charcoal);
+		& + * {
+			margin-top: 1.25rem;
+		}
+	}
+
+	.button {
+		font: inherit;
+		line-height: 1;
+		background-color: var(--c-white);
+		border: 2px solid var(--c-indigo);
+		color: var(--c-indigo);
+		padding: 0.5em 1em;
+		border-radius: 6px;
+		font-weight: 500;
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+		&:hover,
+		&:focus {
+			background-color: var(--c-indigo);
+			color: var(--c-white);
+		}
+	}
+	
+	.details {
+		display: flex;
+		gap: 1rem;
+		div {
+			padding: .75em 1em;
+			background-color: var(--c-titan-white);
+			border-radius: 8px;
+			display: flex;
+			flex-direction: column-reverse;
+			gap: .125em;
+			flex-basis: 50%;
+		}
+		
+		dt {
+			font-size: .875rem;
+			color: var(--c-cold-purple);
+		}
+		
+		dd {
+			color: var(--c-indigo);
+			font-weight: 600;
+			font-size: 1.25rem;
+		}
+	}
+}
+@keyframes cardEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info {
+    color: var(--c-charcoal);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Limit to 5 lines */
+    -webkit-box-orient: vertical;
+    max-height: calc(1.25rem * 5); /* Adjust based on line-height */
+    line-height: 1.25rem; /* Adjust based on font-size */
+}
+
+
+
+.plan {
+	padding: 10px;
+	background-color: var(--c-white);
+	color: var(--c-del-rio);
+	
+	strong {
+		font-weight: 600;
+		color: var(--c-coffee);
+	}
+	
+	.inner {
+		padding: 20px;
+		padding-top: 40px;
+		background-color: var(--c-fair-pink);
+		border-radius: 12px;
+	position: relative;
+		overflow: hidden;
+	}
+	
+	.pricing {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: var(--c-apricot);
+		border-radius: 99em 0 0 99em;
+		display: flex;
+		align-items: center;
+		padding: .625em .75em;
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--c-coffee);
+		small {
+			color: var(--c-del-rio);
+			font-size: .75em;
+			margin-left: .25em;
+		}
+		
+	}
+	
+	.title {
+		font-weight: 600;
+		font-size: 1.25rem;
+		color: var(--c-coffee);
+		& + * {
+			margin-top: .75rem;
+		}
+	}
+	
+	.info {
+		& + * {
+			margin-top: 1rem;
+		}
+	}
+	
+	.features {
+		display: flex;
+		flex-direction: column;
+		li {
+			display: flex;
+			align-items: center;
+			gap: .5rem;
+			& + * {
+				margin-top: .75rem;
+			}
+		}
+		
+		.icon {
+			background-color: var(--c-java);
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			color: var(--c-white);
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			svg {
+				width: 14px;
+				height: 14px;
+			}
+		}
+		
+		& + * {
+			margin-top: 1.25rem;
+		}
+	}
+	
+	button {
+		font: inherit;
+		background-color: var(--c-indigo);
+		border-radius: 6px;
+		color: var(--c-white);
+		font-weight: 500;
+		font-size: 1.125rem;
+		width: 100%;
+		border: 0;
+		padding: 1em;
+		&:hover,
+		&:focus {
+			background-color: var(--c-governor);
+		}
+	}
+	
+	
+}

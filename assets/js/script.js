@@ -68,7 +68,7 @@ const jobsContentHtml = (job, id) => {
     <p class="info truncated">${job.Description??' \n \n \n \n \n \n '}</p> 
     <div>${tags}</div>
     <div class="flex flex-col">
-        <a href=${job.apply_link}
+        <a href=${job.ApplyLink}
            target="_blank"
            class="bg-purple-700  hover:bg-purple-400 shadow text-white py-2 px-8 rounded cursor-pointer">
             Apply

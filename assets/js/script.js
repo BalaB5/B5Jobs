@@ -68,7 +68,7 @@ const jobsContentHtml = (job, id) => {
     <p class="info truncated">${job.Description??' \n \n \n \n \n \n '}</p> 
     <div>${tags}</div>
     <div class="flex flex-col">
-        <a href=${job.ApplyLink}
+        <a href=${job.apply_link}
            target="_blank"
            class="bg-purple-700  hover:bg-purple-400 shadow text-white py-2 px-8 rounded cursor-pointer">
             Apply
@@ -83,7 +83,7 @@ const jobsContentHtml = (job, id) => {
 // if skill is provided then filter based on that skill on selected job type (jobs/internships)
 async function changeContent(type = 'jobs', skill = null) {
     if (jobsDataList.length == 0) {
-        jobsDataList = await apiCall();
+        jobsDataList = await jobListApi( 'JobsTypes');
     }
     let str = '';
     let headingText = '';
@@ -102,11 +102,6 @@ async function changeContent(type = 'jobs', skill = null) {
 
     loader.classList.toggle('hidden'); // loading starts
 
-    // Remove all other listings before changing content 
-    // let cards = document.querySelectorAll(""); // existing cards
-    // for (let i = 0; i < cards.length; i++) {
-    //     cards[i].remove();
-    // }
     const element = document.getElementById("main-card");
     if (element) {
         element.remove();

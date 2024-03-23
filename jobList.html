@@ -6,11 +6,7 @@
     <title>JobApi</title>
     
 <script src="./assets/js/apiCall.js"></script>
-</head>
-<body>
-    <pre id="jsonOutput" class="api"></pre>
-</body>
-
+    
 <script>
     async function get() {
         var jsonStr = await jobListApi( 'Jobs');
@@ -18,5 +14,10 @@
     }
     get();
 </script>
+</head>
+<body>
+    <pre id="jsonOutput" class="api"></pre>
+</body>
+
 
 </html>
